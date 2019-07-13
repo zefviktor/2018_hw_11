@@ -926,7 +926,7 @@ button {
   flex-direction: column;
   justify-content: center; }
   .title__home__background {
-    background: url("../../img/block/title_home_bg.jpg") center/cover no-repeat; }
+    background: url("../img/block/title_home_bg.jpg") center/cover no-repeat; }
   .title__home__content {
     display: flex;
     flex-direction: column;
@@ -987,7 +987,7 @@ button {
   padding-bottom: 7%;
   background-color: #e3e3e3; }
   .about__background {
-    background: url("../../img/block/about_bg.jpg") center/cover no-repeat;
+    background: url("../img/block/about_bg.jpg") center/cover no-repeat;
     max-width: 1170px;
     height: 325px; }
   .about__content {
@@ -1020,7 +1020,7 @@ button {
 .services__background {
   padding-top: 5%;
   padding-bottom: 5%;
-  background: url("../../img/block/services_bg.jpg") center/cover no-repeat; }
+  background: url("../img/block/services_bg.jpg") center/cover no-repeat; }
 
 .services__content-title {
   text-align: center;
@@ -1067,7 +1067,7 @@ button {
     padding-bottom: 5%; }
 
 .team__background {
-  background: url("../../img/block/home-bg.jpg"); }
+  background: url("../img/block/home-bg.jpg"); }
 
 .portfolio__background {
   padding-top: 5%;
@@ -1099,7 +1099,7 @@ button {
 .our-team__background {
   padding-top: 5%;
   padding-bottom: 5%;
-  background: url("../../img/block/our-team_bg.jpg") center/cover no-repeat; }
+  background: url("../img/block/our-team_bg.jpg") center/cover no-repeat; }
 
 .our-team__content-title {
   text-align: center;
@@ -1308,7 +1308,7 @@ button {
       padding-right: 1%; }
 
 .testimonials__background {
-  background: url("../../img/block/testimonials_bg.jpg") center/cover no-repeat; }
+  background: url("../img/block/testimonials_bg.jpg") center/cover no-repeat; }
 
 .testimonials__content {
   display: flex;
@@ -1317,7 +1317,7 @@ button {
   padding-bottom: 10%; }
   .testimonials__content-avatar {
     margin: 0 auto;
-    background: url("../../img/elements/icon_testimonials.png") center/cover no-repeat;
+    background: url("../img/elements/icon_testimonials.png") center/cover no-repeat;
     width: 105px;
     height: 106px; }
   .testimonials__content-paragraph {
