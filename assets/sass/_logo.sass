@@ -1,0 +1,28 @@
+.logo
+  display: flex
+  align-items: center
+  &__light
+    &-icon
+      @include icon-bg ($width: 41px, $height: 29px, $background: url("../img/elements/logo-light.png"))
+    &-text
+      padding-left: 15px
+      @include text-style ($color: #fff, $font-family: $font-family__logo, $font-size: $font-size__normal, $font-weight: $font-weight__regular)
+      text-transform: uppercase
+      letter-spacing: 1.8px
+  &__dark
+    &-icon
+      @include icon-bg ($width: 41px, $height: 29px, $background: url("../img/elements/logo-dark.png"))
+    &-text
+      padding-left: 15px
+      @include text-style ($color: #757575, $font-family: $font-family__logo, $font-size: $font-size__normal, $font-weight: $font-weight__regular)
+      text-transform: uppercase
+      letter-spacing: 1.8px
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+.item-prices
+  width: 100%
+  display: flex
+  justify-content: center
+  &__item
+    padding-top: 46px
+    padding-bottom: 58px
+    width: 90%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    border: 1px solid $color__second-text
+    background-color: #fff
+  &__icon
+    width: 60%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    position: relative
+    &:after
+      content: ""
+      width: 100%
+      position: absolute
+      border-top: 1px solid $color__second-text
+      z-index: 5
+    &-item
+      display: flex
+      align-items: center
+      justify-content: center
+      @include icon-circle ($width: 50px, $height: 50px, $background-color: $background__first, $border: 2px solid $color__second-text, $border-radius: 150px )
+      @include text-style ($color: $color__second-text, $font-family: $font-family__second, $font-size: $font-size__medium, $font-weight: $font-weight__semi-bold)
+      z-index: 10
+  &__title
+    padding-bottom: 25px
+    text-align: center
+    @include text-style ($color: $color__second-text, $font-family: $font-family__second, $font-size: $font-size__extra-small, $font-weight: $font-weight__semi-bold)
+    text-transform: uppercase
+    letter-spacing: 1.47px
+  &__subtitle
+    width: 100%
+    display: flex
+    justify-content: center
+    padding-top: 35px
+    padding-bottom: 35px
+    text-align: center
+    @include text-style ($color: $color__second-text, $font-family: $font-family__second, $font-size: $font-size__extra-extreme, $font-weight: $font-weight__bold)
+    position: relative
+    &:before
+      content: "$"
+      left: calc(50% - 65px)
+      position: absolute
+      @include text-style ($color: $color__second-text, $font-family: $font-family__second, $font-size: $font-size__extra-large, $font-weight: $font-weight__bold)
+      z-index: 5
+  &__text
+    display: block
+    text-align: center
+    width: 87%
+    padding-top: 20px
+    @include text-style ($color: $color__second-text, $font-family: $font-family__first, $font-size: $font-size__small, $font-weight: $font-weight__regular)
+    letter-spacing: 1.4px
+    font-style: italic
+  &__button
+    padding-top: 50px
+
+
+
+
+
+
+
+

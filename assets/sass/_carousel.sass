@@ -1,0 +1,87 @@
+.carousel
+  &-wrapper
+    width: 100%
+    position: relative
+    background-color: transparent
+    overflow: hidden
+    display: block
+
+  &-items
+    padding-top: 5%
+    padding-bottom: 5%
+    list-style: none
+    display: flex
+    flex-direction: row
+    width: 300%
+    height: 100%
+    position: relative
+    z-index: 1
+    transition: left .5s ease-out
+    -o-transition: left .5s ease-out
+    -ms-transition: left .5s ease-out
+    -moz-transition: left .5s ease-out
+    -webkit-transition: left .5s ease-out
+    @media (max-width: 1200px)
+      padding-top: 300px
+      padding-bottom: 250px
+    @media (max-width: 992px)
+      padding-top: 200px
+      padding-bottom: 180px
+    @media (max-width: 768px)
+      padding-top: 100px
+      padding-bottom: 100px
+    @media (max-width: 576px)
+      padding-top: 50px
+      padding-bottom: 50px
+  &-item
+    display: block
+    float: left
+    width: 100%
+    height: 100%
+    color: #fff
+
+  &-labels
+    position: absolute
+    z-index: 2
+    left: 0
+    bottom: 0
+    height: 20%
+    width: 100%
+    text-align: center
+    list-style: none
+    display: block
+  &-label
+    display: inline-block
+    padding: 0.5%
+    &-pool
+      width: 12px
+      height: 12px
+      border-radius: 10px
+      background-color: #fff
+      opacity: 0.5
+      display: block
+      cursor: pointer
+      border: 1px solid transparent
+  &-selector
+    display: none
+
+#slide1:checked ~ .carousel-items
+  left: 0
+
+#slide1:checked ~ .carousel-labels .carousel-label:nth-child(1) label
+  background-color: #fff
+  opacity: 1
+
+#slide2:checked ~ .carousel-items
+  left: -100%
+
+#slide2:checked ~ .carousel-labels .carousel-label:nth-child(2) label
+  background-color: #fff
+  opacity: 1
+
+#slide3:checked ~ .carousel-items
+  left: -200%
+
+#slide3:checked ~ .carousel-labels .carousel-label:nth-child(3) label
+  background-color: #fff
+  opacity: 1

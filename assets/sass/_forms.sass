@@ -1,0 +1,31 @@
+.form
+  &__input
+    margin: 0 1% 2% 1%
+    width: 100%
+    padding: 0 0 0 20px
+    background: transparent
+    border: 2px solid #464646
+    outline: none
+    color: white
+    font-size: 17px
+    box-sizing: border-box
+    &-text
+      width: 48%
+      height: 56px
+    &-textarea
+      width: 100%
+      resize: none
+      padding-top: 15px
+      min-height: 100px
+    &-submit
+      margin: 0 1% 2% 1%
+      width: 100%
+      max-width: 135px
+      min-height: 40px
+      border: 2px solid #464646
+      @include text-style ($color: $color__fourth-text, $font-family: $font-family__second, $font-size: $font-size__extra-small, $font-weight: $font-weight__regular)
+      background: transparent
+      outline: none
+      cursor: pointer
+      &:hover
+        background-color: #464646

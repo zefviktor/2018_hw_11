@@ -1,0 +1,50 @@
+.shop
+  padding-top: 5%
+  padding-bottom: 5%
+  background-color: $background__fourth
+  &__block
+    display: flex
+    justify-content: space-between
+  &__content
+    width: 70%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &-text
+      display: flex
+      flex-direction: column
+      width: 100%
+      &-title
+        width: 90%
+        text-align: left
+        margin: 0 auto
+        @include text-style ($color: $color__fourth-text, $font-family: $font-family__second, $font-size: $font-size__small, $font-weight: $font-weight__bold)
+        letter-spacing: 1.81px
+      &-subtitle
+        padding-top: 2%
+        width: 90%
+        text-align: left
+        margin: 0 auto
+        @include text-style ($color: $color__third-text, $font-family: $font-family__first, $font-size: $font-size__small, $font-weight: $font-weight__regular)
+        font-style: italic
+        line-height: 20px
+    &-item
+      @include icon-bg ($width: 109px, $height: 104px, $background: url("../../img/elements/kompas.png"))
+      display: flex
+      flex-wrap: wrap
+  &__button
+    display: flex
+    align-items: center
+    margin: 0 auto
+
+
+
+
+
+
+
+
+
+
+
+

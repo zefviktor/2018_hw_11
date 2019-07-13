@@ -1,0 +1,56 @@
+.item-team
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  flex-wrap: wrap
+  &__icon
+    &-avatar1
+      display: block
+      @include icon-bg ($width: 271px, $height: 338px, $background: url("../img/elements/icon_avatar1.jpg"))
+    &-avatar2
+      display: block
+      @include icon-bg ($width: 271px, $height: 338px, $background: url("../img/elements/icon_avatar2.jpg"))
+    &-avatar3
+      display: block
+      @include icon-bg ($width: 271px, $height: 338px, $background: url("../img/elements/icon_avatar3.jpg"))
+  &__content
+    width: 90%
+    height: 90%
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    opacity: 0
+    padding: 5%
+    box-sizing: border-box
+    &:hover
+      background-color: rgba(246, 246, 246, 0.82)
+      opacity: 1
+    &-title
+      display: flex
+      justify-content: start
+      text-align: start
+      padding-top: 5%
+      @include text-style ($color: $color__second-text, $font-family: $font-family__second, $font-size: $font-size__extra-small, $font-weight: $font-weight__black)
+      letter-spacing: 1.47px
+    &-subtitle
+      padding-top: 2%
+      padding-bottom: 5%
+      text-align: start
+      @include text-style ($color: $color__second-text, $font-family: $font-family__first, $font-size: $font-size__extra-small, $font-weight: $font-weight__regular)
+      font-style: italic
+      letter-spacing: 1.47px
+    &-item-social
+      padding-top: 5%
+      width: 60%
+      border-top: 2px solid #3e3d3d
+
+
+
+
+
+
+
+
