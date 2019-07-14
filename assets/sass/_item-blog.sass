@@ -1,13 +1,31 @@
 .item-blog
-  width: 100%
+  width: 900px
   display: flex
+  flex-direction: column
+  @media (min-width: 800px)
+    flex-direction: row
+    &:nth-child(2n)
+      flex-direction: row-reverse
+  @media (min-width: 1800px)
+    &:nth-child(1)
+      flex-direction: row-reverse
+    &:nth-child(2)
+      flex-direction: row-reverse
+    &:nth-child(3)
+      flex-direction: row
+    &:nth-child(4)
+      flex-direction: row
   &__blog1
+    margin: 0 auto
     @include icon-bg ($width: 50%, $height: 400px, $background: url("../img/elements/icon_blog1.jpg"))
   &__blog2
+    margin: 0 auto
     @include icon-bg ($width: 50%, $height: 400px, $background: url("../img/elements/icon_blog2.jpg"))
   &__blog3
+    margin: 0 auto
     @include icon-bg ($width: 50%, $height: 400px, $background: url("../img/elements/icon_blog3.jpg"))
   &__blog4
+    margin: 0 auto
     @include icon-bg ($width: 50%, $height: 400px, $background: url("../img/elements/icon_blog4.jpg"))
   &__content
     padding: 5% 7%
@@ -18,6 +36,9 @@
     position: relative
     background-color: $color__second-text
     width: 50%
+    margin: 0 auto
+    @media (min-width: 800px)
+      margin: 0
     &-subtitle
       text-align: start
       @include text-style ($color: $color__fifth-text, $font-family: $font-family__first, $font-size: $font-size__tiny, $font-weight: $font-weight__semi-bold)

@@ -16,10 +16,12 @@
       @include text-style ($color: $color__first-text, $font-family: $font-family__first, $font-size: $font-size__extra-small, $font-weight: $font-weight__regular)
       letter-spacing: 1.4px
     &__title
+      text-align: center
       padding-top: 5%
       padding-bottom: 1.5%
       @include text-style ($color: $color__first-text, $font-family: $font-family__title-general, $font-size: $font-size__extra-large, $font-weight: $font-weight__regular)
       letter-spacing: 1.4px
+      line-height: $font-size__extra-large*1.5
     &__button
       padding-top: 5%
       position: relative
@@ -30,11 +32,11 @@
         height: 50px
         bottom: -42px
         left: 45%
-        background: url("../../img/elements/button-arrow.png")
+        background: url("../img/elements/button-arrow.png")
 
   &__blog-sidebar
     &__background
-      background: url("../../img/block/title_blog-sidebar_bg.jpg") center / cover no-repeat
+      background: url("../img/block/title_blog-sidebar_bg.jpg") center / cover no-repeat
     &__content
       display: flex
       flex-direction: column

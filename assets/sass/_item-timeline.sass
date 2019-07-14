@@ -1,104 +1,116 @@
 .item-timeline
   width: 100%
   display: flex
-  flex-direction: column
+  flex-direction: row
   flex-wrap: wrap
   &__content
-    &-left
-      padding-right: 10%
-      margin-bottom: 10%
-      position: relative
-      &:before
-        position: absolute
-        top: 20px
-        right: -9px
-        content: ' '
-        display: block
-        width: 18px
-        height: 18px
-        background: $link-color
-        border-radius: 9px
-        z-index: 10
-    &-right
-      padding-left: 10%
-      margin-top: 10%
-      position: relative
-      &:after
-        position: absolute
-        top: 20px
-        left: -9px
-        content: ' '
-        display: block
-        width: 18px
-        height: 18px
-        background: $link-color
-        border-radius: 9px
-        z-index: 10
-    &-arrow
-      &-right
-        border: 2px solid $color__second-text
-        display: flex
-        flex-direction: column
+    width: 100%
+
+    @media (min-width: 992px)
+      width: 50%
+    &:nth-child(2n+1)
+      padding-bottom: 20px
+      @media (min-width: 992px)
+        padding-right: 40px
+        margin-bottom: 20px
         position: relative
         &:before
-          content: ''
           position: absolute
-          top: calc(20px + 7px)
-          left: -14px
-          border-top: 14px solid $color__second-text
-          border-left: 14px solid transparent
-          z-index: 1
+          top: 20px
+          right: -9px
+          content: ' '
+          display: block
+          width: 18px
+          height: 18px
+          background: $link-color
+          border-radius: 9px
+          z-index: 10
+    &:nth-child(2n)
+      padding-bottom: 20px
+      @media (min-width: 992px)
+        padding-left: 40px
+        margin-top: 20px
+        position: relative
         &:after
-          content: ''
           position: absolute
-          top: calc(20px + 9px)
+          top: 20px
           left: -9px
-          border-top: 10px solid $background__third
-          border-left: 10px solid transparent
-          z-index: 2
-        &:hover .layer
-          background-color: $color__second-text
-          color: $color__first-text
-          z-index: 3
-          &::after
+          content: ' '
+          display: block
+          width: 18px
+          height: 18px
+          background: $link-color
+          border-radius: 9px
+          z-index: 10
+    &-arrow
+      border: 2px solid $color__second-text
+      display: flex
+      flex-direction: column
+      position: relative
+      z-index: 6
+      background-color: white
+      @media (min-width: 992px)
+        &-left
+          &:before
             content: ''
             position: absolute
             top: calc(20px + 7px)
             left: -14px
             border-top: 14px solid $color__second-text
             border-left: 14px solid transparent
-      &-left
-        border: 2px solid $color__second-text
-        display: flex
-        flex-direction: column
-        position: relative
-        &:before
-          content: ''
-          position: absolute
-          top: calc(20px + 7px)
-          right: -14px
-          border-top: 14px solid $color__second-text
-          border-right: 14px solid transparent
-          z-index: 1
-        &:after
-          content: ''
-          position: absolute
-          top: calc(20px + 9px)
-          right: -9px
-          border-top: 11px solid $background__third
-          border-right: 11px solid transparent
-          z-index: 2
-        &:hover .layer
-          background-color: $color__second-text
-          color: $color__first-text
-          z-index: 3
-          &::after
+            z-index: 1
+          &:after
+            content: ''
+            position: absolute
+            top: calc(20px + 9px)
+            left: -9px
+            border-top: 10px solid $background__third
+            border-left: 10px solid transparent
+            z-index: 2
+          &:hover .layer
+            background-color: $color__second-text
+            color: $color__first-text
+            z-index: 3
+            &::after
+              content: ''
+              position: absolute
+              top: calc(20px + 7px)
+              left: -14px
+              border-top: 14px solid $color__second-text
+              border-left: 14px solid transparent
+        &-right
+          &:before
             content: ''
             position: absolute
             top: calc(20px + 7px)
             right: -14px
             border-top: 14px solid $color__second-text
             border-right: 14px solid transparent
+            z-index: 1
+          &:after
+            content: ''
+            position: absolute
+            top: calc(20px + 9px)
+            right: -9px
+            border-top: 11px solid $background__third
+            border-right: 11px solid transparent
+            z-index: 2
+          &:hover .layer
+            background-color: $color__second-text
+            color: $color__first-text
+            z-index: 3
+            &::after
+              content: ''
+              position: absolute
+              top: calc(20px + 7px)
+              right: -14px
+              border-top: 14px solid $color__second-text
+              border-right: 14px solid transparent
+      &:hover .layer
+        background-color: $color__second-text
+        color: $color__first-text
+        z-index: 3
+
     &-title
       display: flex
       justify-content: start
@@ -109,8 +121,10 @@
       @include text-style ($color: $color__second-text, $font-family: $font-family__second, $font-size: $font-size__tiny, $font-weight: $font-weight__semi-bold)
       text-transform: uppercase
       letter-spacing: 1.47px
+      line-height: $font-size__tiny*1.5
+
     &-subtitle
-      padding-top: 2%
+      padding-top: 4%
       padding-right: 5%
       padding-left: 5%
       text-align: start
@@ -124,6 +138,142 @@
       letter-spacing: 1.4px
 
 
-
+//.item-timeline
+//  width: 100%
+//  display: flex
+//  flex-direction: column
+//  flex-wrap: wrap
+//  &__content
+//    &-left
+//      padding-bottom: 10%
+//      @media (min-width: 992px)
+//        padding-right: 10%
+//        margin-bottom: 10%
+//        position: relative
+//        &:before
+//          position: absolute
+//          top: 20px
+//          right: -9px
+//          content: ' '
+//          display: block
+//          width: 18px
+//          height: 18px
+//          background: $link-color
+//          border-radius: 9px
+//          z-index: 10
+//    &-right
+//      padding-bottom: 10%
+//      @media (min-width: 992px)
+//        padding-left: 10%
+//        margin-top: 10%
+//        position: relative
+//        &:after
+//          position: absolute
+//          top: 20px
+//          left: -9px
+//          content: ' '
+//          display: block
+//          width: 18px
+//          height: 18px
+//          background: $link-color
+//          border-radius: 9px
+//          z-index: 10
+//    &-arrow
+//      &-right
+//        border: 2px solid $color__second-text
+//        display: flex
+//        flex-direction: column
+//        position: relative
+//        @media (min-width: 992px)
+//          &:before
+//            content: ''
+//            position: absolute
+//            top: calc(20px + 7px)
+//            left: -14px
+//            border-top: 14px solid $color__second-text
+//            border-left: 14px solid transparent
+//            z-index: 1
+//          &:after
+//            content: ''
+//            position: absolute
+//            top: calc(20px + 9px)
+//            left: -9px
+//            border-top: 10px solid $background__third
+//            border-left: 10px solid transparent
+//            z-index: 2
+//        &:hover .layer
+//          background-color: $color__second-text
+//          color: $color__first-text
+//          z-index: 3
+//          @media (min-width: 992px)
+//            &::after
+//              content: ''
+//              position: absolute
+//              top: calc(20px + 7px)
+//              left: -14px
+//              border-top: 14px solid $color__second-text
+//              border-left: 14px solid transparent
+//      &-left
+//        border: 2px solid $color__second-text
+//        display: flex
+//        flex-direction: column
+//        position: relative
+//        @media (min-width: 992px)
+//          &:before
+//            content: ''
+//            position: absolute
+//            top: calc(20px + 7px)
+//            right: -14px
+//            border-top: 14px solid $color__second-text
+//            border-right: 14px solid transparent
+//            z-index: 1
+//          &:after
+//            content: ''
+//            position: absolute
+//            top: calc(20px + 9px)
+//            right: -9px
+//            border-top: 11px solid $background__third
+//            border-right: 11px solid transparent
+//            z-index: 2
+//        &:hover .layer
+//          background-color: $color__second-text
+//          color: $color__first-text
+//          z-index: 3
+//          @media (min-width: 992px)
+//            &::after
+//              content: ''
+//              position: absolute
+//              top: calc(20px + 7px)
+//              right: -14px
+//              border-top: 14px solid $color__second-text
+//              border-right: 14px solid transparent
+//    &-title
+//      display: flex
+//      justify-content: start
+//      text-align: start
+//      padding-top: 5%
+//      padding-right: 5%
+//      padding-left: 5%
+//      @include text-style ($color: $color__second-text, $font-family: $font-family__second, $font-size: $font-size__tiny, $font-weight: $font-weight__semi-bold)
+//      text-transform: uppercase
+//      letter-spacing: 1.47px
+//    &-subtitle
+//      padding-top: 2%
+//      padding-right: 5%
+//      padding-left: 5%
+//      text-align: start
+//      @include text-style ($color: $color__second-text, $font-family: $font-family__second, $font-size: $font-size__tiny, $font-weight: $font-weight__semi-bold)
+//      text-transform: uppercase
+//      letter-spacing: 1.47px
+//    &-text
+//      padding: 5%
+//      @include text-style ($color: $color__second-text, $font-family: $font-family__first, $font-size: $font-size__extra-small, $font-weight: $font-weight__regular)
+//      line-height: 20.31px
+//      letter-spacing: 1.4px
+//
+//
+//
+//
+//
 
 

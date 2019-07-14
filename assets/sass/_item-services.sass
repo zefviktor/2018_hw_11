@@ -1,7 +1,15 @@
 .item-services
+  padding-top: 40px
   width: 100%
   display: flex
   justify-content: center
+  @media (min-width: 576px)
+    width: 50%
+  @media (min-width: 768px)
+    width: 50%
+  @media (min-width: 992px)
+    width: 25%
+
   &__item
     border: 1px solid #ffffff
     width: 90%
@@ -10,17 +18,18 @@
     justify-content: space-between
     align-items: center
   &__icon
-    padding-left: 10%
-    padding-right: 10%
+    padding-left: 10px
+    padding-right: 10px
     text-align: center
     color: $color__fourth-text
     font-size: 26px
   &__title
     text-align: center
-    padding-top: 55px
+    padding-top: 40px
     @include text-style ($color: $color__fourth-text, $font-family: $font-family__second, $font-size: $font-size__tiny, $font-weight: $font-weight__semi-bold)
     text-transform: uppercase
     letter-spacing: 1.47px
+    line-height: $font-size__tiny*1.5
   &__text
     margin: 0 auto
     width: 87%

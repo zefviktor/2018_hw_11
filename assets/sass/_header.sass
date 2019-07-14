@@ -1,9 +1,12 @@
 .header
-  padding-top: 45px
+  padding-top: 15px
   padding-bottom: 15px
   &__content
     display: flex
+    flex-flow: row wrap
     text-align: center
-    justify-content: space-between
+    justify-content: center
+    @media (min-width: 992px)
+      justify-content: space-between
   &__background
     background: $background__first
