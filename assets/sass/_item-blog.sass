@@ -17,42 +17,42 @@
       flex-direction: row
   &__blog1
     margin: 0 auto
-    @include icon-bg ($width: 50%, $height: 400px, $background: url("../img/elements/icon_blog1.jpg"))
+    @include icon-bg ($width: 100%, $height: 400px, $background: url("../img/elements/icon_blog1.jpg"))
   &__blog2
     margin: 0 auto
-    @include icon-bg ($width: 50%, $height: 400px, $background: url("../img/elements/icon_blog2.jpg"))
+    @include icon-bg ($width: 100%, $height: 400px, $background: url("../img/elements/icon_blog2.jpg"))
   &__blog3
     margin: 0 auto
-    @include icon-bg ($width: 50%, $height: 400px, $background: url("../img/elements/icon_blog3.jpg"))
+    @include icon-bg ($width: 100%, $height: 400px, $background: url("../img/elements/icon_blog3.jpg"))
   &__blog4
     margin: 0 auto
-    @include icon-bg ($width: 50%, $height: 400px, $background: url("../img/elements/icon_blog4.jpg"))
+    @include icon-bg ($width: 100%, $height: 400px, $background: url("../img/elements/icon_blog4.jpg"))
   &__content
-    padding: 5% 7%
     box-sizing: border-box
     border: 2px solid $color__second-text
     display: flex
     flex-direction: column
     position: relative
     background-color: $color__second-text
-    width: 50%
+    width: 100%
     margin: 0 auto
     @media (min-width: 800px)
       margin: 0
     &-subtitle
+      padding: 5% 7%
       text-align: start
       @include text-style ($color: $color__fifth-text, $font-family: $font-family__first, $font-size: $font-size__tiny, $font-weight: $font-weight__semi-bold)
       font-style: italic
     &-title
+      padding: 5% 7%
       display: flex
       justify-content: start
       text-align: start
-      padding-top: 5%
       @include text-style ($color: $color__fifth-text, $font-family: $font-family__second, $font-size: $font-size__extra-small, $font-weight: $font-weight__semi-bold)
       text-transform: uppercase
       letter-spacing: 1.47px
     &-text
-      padding-top: 5%
+      padding: 5% 7%
       @include text-style ($color: $color__third-text, $font-family: $font-family__first, $font-size: $font-size__extra-small, $font-weight: $font-weight__regular)
       line-height: 20.31px
       letter-spacing: 1.4px
