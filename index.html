@@ -1084,7 +1084,6 @@
                     </span>
                 </a>
             </div>
-
             <div class="contacts__content">
                 <div class="contacts__content-info">
                     <p class="info__text">
@@ -1131,32 +1130,33 @@
                         </div>
                     </div>
                 </div>
-                <form class="contacts__content-form">
+                <form class="contacts__content-form" action="send.php" method="post">
                     <div class="contacts__content-form-input">
                         <label for="name" hidden="hidden">name</label>
-                        <input type="text" id="name" name="name" class="form__input form__input-text" placeholder="Name*">
+                        <input type="text" id="name" name="name" class="form__input form__input-text" placeholder="Name*" required>
 
                         <label for="email" hidden="hidden">email</label>
-                        <input type="text" id="email" name="email" class="form__input form__input-text" placeholder="E-mail*">
+                        <input type="text" id="email" name="email" class="form__input form__input-text" placeholder="E-mail*" required>
 
                         <label for="number" hidden="hidden">number</label>
-                        <input type="tel" id="number" name="number" class="form__input form__input-text" placeholder="Telephone*">
+                        <input type="tel" id="number" name="number" class="form__input form__input-text" placeholder="Telephone*" required>
 
                         <label for="website" hidden="hidden">website</label>
                         <input type="text" id="website" name="website" class="form__input form__input-text" placeholder="Website">
 
-                        <textarea id="message" name="message" class="form__input form__input-textarea" placeholder="Message"></textarea>
+                        <label for="message" hidden="hidden">message</label>
+                        <textarea id="message" name="message" class="form__input form__input-textarea" placeholder="Message" required></textarea>
 
                         <input type="submit" class="form__input-submit" name="submit" value="Submit">
                     </div>
                 </form>
             </div>
-            <footer class="container footer">
-                <p class="footer-title">
-                    Copyright © 2015 Atlantida Theme
-                </p>
-            </footer>
         </div>
+        <footer class="footer">
+            <p class="footer-title container">
+                Copyright © 2015 Atlantida Theme
+            </p>
+        </footer>
     </section>
 
 

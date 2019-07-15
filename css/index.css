@@ -1461,28 +1461,46 @@ button {
   padding: 0 10px; }
 
 .contacts__logo {
-  padding-top: 5%;
-  padding-bottom: 5%; }
+  padding-top: 5%; }
 
 .contacts__content {
   display: flex;
-  width: 100%; }
+  width: 100%;
+  flex-direction: column; }
+  @media (min-width: 576px) {
+    .contacts__content {
+      flex-direction: column; } }
+  @media (min-width: 768px) {
+    .contacts__content {
+      flex-direction: column; } }
+  @media (min-width: 992px) {
+    .contacts__content {
+      flex-direction: row; } }
   .contacts__content-info {
-    width: 33.33%;
+    padding-top: 5%;
+    width: 100%;
     box-sizing: border-box;
     padding-right: 2%; }
+    @media (min-width: 992px) {
+      .contacts__content-info {
+        width: 33.33%; } }
   .contacts__content-form {
-    width: 66.66%; }
+    padding-top: 5%;
+    width: 100%; }
+    @media (min-width: 992px) {
+      .contacts__content-form {
+        width: 66.66%; } }
     .contacts__content-form-input {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap; }
 
 .footer {
-  padding: 5% 0; }
+  margin-top: 5%;
+  border-top: 1px solid #3e3d3d; }
   .footer-title {
-    border-top: 1px solid #3e3d3d;
     padding-top: 5%;
+    padding-bottom: 5%;
     color: #949494;
     font-family: "Crimson", sans-serif;
     font-size: 14px;
