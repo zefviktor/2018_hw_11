@@ -28,10 +28,10 @@ $message =trim($message);
 //echo $name;
 //echo "<br>";
 //echo $email;
-if (mail("zefviktor@gmail.com", "Заявка с сайта", "ФИО:".$name.". E-mail: ".$email ,"From:  info@zefviktor.github.io \r\n"))
+if (mail("zefviktor@gmail.com", "Заявка с сайта", "ФИО:".$name.". E-mail: ".$email ,"From:  info@localhost \r\n"))
  {     echo "good work)";
 } else {
     echo "error 404";
-}?>
+}
 
 
